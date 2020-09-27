@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'Manifold DSA Demi';
+	src: url(../../assets/fonts/ManifoldDSA-DemiBoldItalic.woff2) format('woff2'),
+	url(../../assets/fonts/ManifoldDSA-DemiBoldItalic.woff) format('woff');
+	font-weight: 600;
+	font-style: italic;
+}

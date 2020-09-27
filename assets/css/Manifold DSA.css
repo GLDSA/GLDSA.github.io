@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'Manifold DSA';
+	src: url(../../assets/fonts/ManifoldDSA-Bold.woff2) format('woff2'),
+	url(../../assets/fonts/ManifoldDSA-Bold.woff) format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
