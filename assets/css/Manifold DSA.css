@@ -9,3 +9,7 @@
 .container {
 	text-align: center;
 }
+
+div.block-heading.navbar-buffer {
+	padding-top: 115px;
+}
