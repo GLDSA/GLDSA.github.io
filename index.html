@@ -26,24 +26,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><a class="navbar-brand logo" style="font-family: 'Manifold DSA Extra';font-style: normal;font-weight: bold;" href="../index.html">Greater Lafayette DSA</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div
-                class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" style="padding-right: 16px;"><a class="nav-link" href="../index.html" style="font-family: 'Manifold DSA';">Home</a></li>
-                    <li class="nav-item" style="padding-right: 16px;"><a class="nav-link" href="../statements.html" style="font-family: 'Manifold DSA';">Statements</a></li>
-                    <li class="nav-item" style="padding-right: 16px;"><a class="nav-link" style="font-family: 'Manifold DSA';" href="../campaigns.html">Campaigns</a></li>
-                    <li class="nav-item" style="padding-right: 16px;"><a class="nav-link" href="../resources.html" style="font-family: 'Manifold DSA';">Resources</a></li>
-                    <li class="nav-item" style="padding-right: 16px;"><a class="nav-link" href="contact.html" style="font-family: 'Manifold DSA';">Contact</a></li>
-                    <li class="nav-item" style="padding-right: 16px;"><a class="nav-link active" href="join.html" style="font-family: 'Manifold DSA';">Get Involved</a></li>
-                    <li class="nav-item" style="padding-right: 16px;"><a class="nav-link" href="bowl.html" style="font-family: 'Manifold DSA';">Bowl-a-thon</a></li>
-                    <li class="nav-item" style="padding-right: 16px;"><a class="nav-link" href="https://twitter.com/ydsapurdue" style="font-family: 'Manifold DSA';color: rgb(236,31,39);">Purdue YdSA</a></li>
-                </ul>
-        </div>
-        </div>
-    </nav>
-    <main class="text-center page landing-page">
+    <div id="navigation"></div>
+    <main style="padding-top: 85px;" class="text-center page landing-page">
         <section class="clean-block clean-hero" style="color: rgba(236,31,39,0.85);background: url(&quot;assets/img/courthouse.jpg&quot;) center / cover no-repeat;">
             <div class="text">
                 <h2 style="font-family: 'Permanent Marker', cursive;font-weight: normal;font-size: 45px;color: #eeeeee;text-shadow: 2px 2px 5px rgba(0,0,0,0.9);">A better world is possible.</h2>
@@ -51,7 +35,7 @@
         </section>
         <section class="clean-block clean-info dark">
             <div class="container">
-                <div class="block-heading">
+                <div class="block-heading navbar-buffer">
                     <div class="alert alert-success" role="alert" style="color: #212529;background: rgb(238,238,238);border-style: solid;border-color: #ec1f27;"><span style="font-family: 'Manifold DSA Extra';">Sign our <a style="color: #ec1f27;"" href="https://actionnetwork.org/petitions/support-the-medicare-for-all-act-of-2019/">Medicare for All petition</a> today!</span></div>
                     <h2 style="color: #ec1f27;font-family: 'Manifold DSA';">Who We Are</h2>
                     <p style="font-family: 'Manifold DSA';max-width: 600px;">We are the Greater Lafayette chapter of the Democratic Socialists of America covering the cites of Lafayette, West Lafayette, and surrounding areas. We're building a movement that's centered on democracy, cooperation, and transformative
@@ -101,17 +85,21 @@
             </div>
         </section>
     </main>
-    <div class="footer-basic" style="background: #eeeeee;">
-        <footer>
-            <div class="social"><a href="https://www.instagram.com/greaterlafayettedsa/"><i class="icon ion-social-instagram"></i></a><a href="https://twitter.com/LafayetteIN_DSA"><i class="icon ion-social-twitter"></i></a><a href="https://www.facebook.com/GreaterLafayetteDSA"><i class="icon ion-social-facebook"></i></a></div>
-        </footer>
-        <p class="copyright">Greater Lafayette DSA © 2020</p>
-    </div>
+    <div id="footer"></div>
+    
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="assets/js/smoothproducts.min.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script>
+        $(function() {
+            $("#navigation").load("assets/modules/navbar.html");
+        });
+        $(function() {
+            $("#footer").load("assets/modules/footer.html");
+        });
+    </script>
 </body>
 
 </html>
